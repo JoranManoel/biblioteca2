@@ -6,10 +6,11 @@
     $isbn = $_GET['isbn'];
     $titulo = $_GET['titulo'];
     $autor = $_GET['autor'];
+    $quantidade = $_GET['quantidade'];
     $genero = $_GET['genero'];
 
     // Comando SQL para inserir dados no Banco de Dados
-    $sql = "INSERT INTO livro VALUES('$isbn','$titulo','$autor','$genero')";
+    $sql = "INSERT INTO livro VALUES('$isbn','$titulo','$autor','$genero', '$quantidade')";
 
     // Tenta executar o comando caso tenha erro pega o erro
     try{

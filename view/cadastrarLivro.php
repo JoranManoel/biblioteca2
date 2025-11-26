@@ -14,6 +14,9 @@
     <label for="isbn">ISBN:</label>
     <input type="text" name="isbn" id="">
     <br>
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" name="quantidade" id="">
+    <br>
     <label for="titulo">Título:</label>
     <input type="text" name="titulo" id="">
     <br>

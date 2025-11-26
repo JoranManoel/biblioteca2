@@ -4,13 +4,13 @@
 
     // Pega os dados do formulário
     $id = $_GET['id'];
-    $titulo = $_GET['titulo'];
-    $quantidade = $_GET['quantidade'];
-    $autor = $_GET['autor'];
-    $genero = $_GET['genero'];
+    $data = $_GET['data'];
+    $usuario = $_GET['usuario'];
+    $livro = $_GET['livro'];
+
 
     // Comando SQL para atualizar dados no Banco de Dados
-    $sql = "UPDATE livro set isbn = '$id', titulo = '$titulo', autor = '$autor', genero = '$genero', quantidade = '$quantidade' WHERE isbn = $id";
+    $sql = "UPDATE emprestimo set id = '$id', data = '$data', usuario = '$usuario', livro = '$livro' WHERE id = $id";
 
     // Tenta executar o comando caso tenha erro pega o erro
     try{

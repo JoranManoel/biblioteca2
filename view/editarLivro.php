@@ -21,6 +21,9 @@
     <!-- Esse input passa o id para o atualizar -->
     <input type="hidden" name="id" value="<?= $livro->isbn ?>">
 
+    <label for="quantidade">Quantidade:</label>
+    <input type="text" name="quantidade" value="<?= $livro->quantidade ?>" id="">
+    <br>
     <label for="isbn">ISBN:</label>
     <input type="text" name="isbn" value="<?= $livro->isbn ?>" id="">
     <br>

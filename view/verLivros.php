@@ -23,7 +23,11 @@
     // Repete enquanto tiver algum item no banco de dados.
     // O item vem do banco de dado por isso tem que ter o mesmo nome das colunas
     while($item = $resposta->fetch_object()){
+        if ($item->quantidade <=3){
+            echo "<p class='alerta'>ESTOQUE BAIXO</p> <br>";
+        }
         echo "
+            Quantidade: $item->quantidade <br>
             ISBN: $item->isbn <br>
             Título: $item->titulo <br>
             Autor: $item->autor <br>

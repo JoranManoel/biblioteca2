@@ -4,10 +4,10 @@
     <a href="/biblioteca2">Início</a>
 
     <a href="/biblioteca2/view/cadastrarLivro.php">Cadastrar Livro</a>
+    
+    <a href="/biblioteca2/view/verLivros.php">Ver Livros</a>
 
     <a href="/biblioteca2/view/cadastrarUsuario.php">Cadastrar Usuário</a>
-
-    <a href="/biblioteca2/view/verLivros.php">Ver Livros</a>
     
     <a href="/biblioteca2/view/verUsuarios.php">Ver Usuários</a>
     
@@ -16,7 +16,10 @@
 </div>
 
 <style>
-
+    .alerta{
+        background-color: red;
+        color: white;
+    }
     div{
         display: flex; 
         justify-content: space-around; 
